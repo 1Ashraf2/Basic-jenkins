@@ -1,7 +1,7 @@
 resource "aws_security_group" "jenkins_controler_sg" {
   name        = "jenkins_controler_sg"
   description = "Allow SSH, HTTP, HTTPS traffic"
-  vpc_id      = "vpc-092b6875a28958408"
+  vpc_id      = "your-vpc"
 
   ingress {
     from_port   = 22
@@ -46,7 +46,7 @@ resource "aws_security_group" "jenkins_controler_sg" {
 resource "aws_security_group" "jenkins_agent1_sg" {
   name        = "jenkins_agent1_sg"
   description = "Allow SSH, HTTP, HTTPS traffic"
-  vpc_id      = "vpc-092b6875a28958408"
+  vpc_id      = "your-vpc"
 
   ingress {
     from_port   = 22
