@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket  = "ash-ter-cert-bucket-2024"
-    key     = "jenkins-statefile/terraform.tfstate"
+    bucket  = "your-s3-bucket-name"
+    key     = "your-folder/terraform.tfstate"
     region  = "eu-west-1"
     version = "~> 2.7"
   }
